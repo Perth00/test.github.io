@@ -1,0 +1,71 @@
+<!-- page3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        div {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        strong {
+            color: #555;
+        }
+
+        span {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Birthday:</strong> <span id="displayBirthday"></span></p>
+        <p><strong>Phone Number:</strong> <span id="displayPhoneNumber"></span></p>
+    </div>
+
+    <script>
+        // Retrieve values from localStorage
+        var storedName = localStorage.getItem('name');
+        var storedEmail = localStorage.getItem('email');
+        var storedBirthday = localStorage.getItem('birthday');
+        var storedPhoneNumber = localStorage.getItem('phoneNumber');
+
+        // Display values on the page
+        document.getElementById('displayName').textContent = storedName;
+        document.getElementById('displayEmail').textContent = storedEmail;
+        document.getElementById('displayBirthday').textContent = storedBirthday;
+        document.getElementById('displayPhoneNumber').textContent = storedPhoneNumber;
+    </script>
+</body>
+</html>

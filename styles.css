@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .title{
+    color:orange;
+    text-align: center;
+  }
+  .container1 {
+    max-width: 250px;
+    margin: 50px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .container {
+    max-width: 250px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 15px 20px;
+    margin: 30px auto; 
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    display: block; 
+    width: 250px;
+  }
+
+  .phone-input-container {
+    display: flex;
+    margin-bottom: 10px; 
+}
+
+  #phoneNumber{
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-color: orange;
+  }
+  #countryCode
+  {
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-color: orange;
+    margin-right:5px;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+  }
+
+.date-row {
+  display: flex;
+  gap: 10px; 
+
+}
+
+.date-row label,
+.date-row select {
+  margin-bottom: 10px;
+  border-color: rgba(142, 140, 138, 0.5);
+  border-radius:5px;
+  width: 29%;
+  height: 30px;
+}
+
+input{
+  width: 90%;
+  height: 30px;
+  border-radius:5px;
+  border-color: rgba(142, 140, 138, 0.5);
+}
